@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dog_Year_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dog Years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l06-E7-mFs">
+                                <rect key="frame" x="105" y="28" width="111" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QxO-O1-XPe">
+                                <rect key="frame" x="105" y="119" width="111" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqu-jr-nTE">
+                                <rect key="frame" x="120" y="170" width="81" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AWD-wv-QrJ"/>
+                                    <constraint firstAttribute="width" constant="81" id="Z60-gL-3kb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Find Age"/>
+                                <connections>
+                                    <action selector="FindAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jsd-hL-TYr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tg7-J6-nKb">
+                                <rect key="frame" x="16" y="519" width="288" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="b2V-1Y-czg"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Copyright (c) 2015 Salt Lake Community College. All rights reserved.">
+                                        <attributes>
+                                            <font key="NSFont" size="8" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Omar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pkf-wp-mgo">
+                                <rect key="frame" x="115" y="485" width="90" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="n2A-n8-0Io"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w0b-gg-6we">
+                                <rect key="frame" x="39" y="208" width="246" height="230"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your dog's age, in years." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sw0-U9-wEh">
+                                <rect key="frame" x="48" y="63" width="224" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="ttl-gW-7Lt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l06-E7-mFs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="2JN-nS-OsG"/>
+                            <constraint firstItem="l06-E7-mFs" firstAttribute="leading" secondItem="QxO-O1-XPe" secondAttribute="leading" id="2vZ-qj-IeH"/>
+                            <constraint firstItem="w0b-gg-6we" firstAttribute="top" secondItem="jqu-jr-nTE" secondAttribute="bottom" constant="8" symbolic="YES" id="G4N-ad-nm2"/>
+                            <constraint firstItem="Pkf-wp-mgo" firstAttribute="centerX" secondItem="tg7-J6-nKb" secondAttribute="centerX" id="Kao-Ci-hNA"/>
+                            <constraint firstItem="Pkf-wp-mgo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="99" id="LtX-c3-Lv0"/>
+                            <constraint firstAttribute="bottom" secondItem="tg7-J6-nKb" secondAttribute="bottom" constant="20" symbolic="YES" id="OQs-QN-PIt"/>
+                            <constraint firstItem="w0b-gg-6we" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="23" id="Xot-Wr-J3K"/>
+                            <constraint firstItem="l06-E7-mFs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="89" id="Y5A-WD-g2W"/>
+                            <constraint firstItem="tg7-J6-nKb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cWJ-dw-679"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="w0b-gg-6we" secondAttribute="trailing" constant="19" id="eqm-k0-aHe"/>
+                            <constraint firstItem="jqu-jr-nTE" firstAttribute="top" secondItem="QxO-O1-XPe" secondAttribute="bottom" constant="21" id="faZ-Qw-Lse"/>
+                            <constraint firstItem="tg7-J6-nKb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="l3n-33-UUY"/>
+                            <constraint firstItem="QxO-O1-XPe" firstAttribute="centerX" secondItem="jqu-jr-nTE" secondAttribute="centerX" id="m0V-fm-qa7"/>
+                            <constraint firstItem="l06-E7-mFs" firstAttribute="trailing" secondItem="QxO-O1-XPe" secondAttribute="trailing" id="meU-Bj-oXV"/>
+                            <constraint firstItem="Sw0-U9-wEh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="nkR-8I-5QW"/>
+                            <constraint firstItem="l06-E7-mFs" firstAttribute="centerX" secondItem="Sw0-U9-wEh" secondAttribute="centerX" id="okI-Pz-yDU"/>
+                            <constraint firstItem="tg7-J6-nKb" firstAttribute="top" secondItem="Pkf-wp-mgo" secondAttribute="bottom" constant="8" symbolic="YES" id="pBa-eY-fXx"/>
+                            <constraint firstItem="Sw0-U9-wEh" firstAttribute="top" secondItem="l06-E7-mFs" secondAttribute="bottom" constant="8" symbolic="YES" id="uiz-vO-EZn"/>
+                            <constraint firstItem="QxO-O1-XPe" firstAttribute="top" secondItem="Sw0-U9-wEh" secondAttribute="bottom" constant="28" id="wNw-V3-kYY"/>
+                            <constraint firstItem="Pkf-wp-mgo" firstAttribute="top" secondItem="w0b-gg-6we" secondAttribute="bottom" constant="47" id="wqH-Zf-98u"/>
+                            <constraint firstItem="jqu-jr-nTE" firstAttribute="centerX" secondItem="Pkf-wp-mgo" secondAttribute="centerX" id="wsB-VL-NC8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DogImage" destination="w0b-gg-6we" id="KJJ-sO-Ac6"/>
+                        <outlet property="DogLabel" destination="Sw0-U9-wEh" id="edb-bx-vFh"/>
+                        <outlet property="inputtext" destination="QxO-O1-XPe" id="ptJ-8V-bB7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114.375" y="122.53521126760563"/>
+        </scene>
+    </scenes>
+</document>
